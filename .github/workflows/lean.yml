@@ -1,1 +1,28 @@
+name: Verify selected Lean results
 
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      LEAN_NUM_THREADS: 2
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - name: Install pinned Lean and obtain mathlib cache
+        uses: leanprover/lean-action@50fcf42d2e460296f1a34b402e990d1b24f8b596 # v1
+        with:
+          auto-config: "false"
+          build: "false"
+          use-mathlib-cache: "true"
+          use-github-cache: "false"
+      - name: Check statements, sources, axioms and imported declarations
+        shell: pwsh
+        run: ./verify.ps1 -ReplayImports
