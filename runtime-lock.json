@@ -1,0 +1,11 @@
+{
+  "leanVersion": "4.33.1",
+  "leanCommit": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+  "leanAsset": "lean-4.33.1-windows.zip",
+  "leanAssetUrl": "https://github.com/leanprover/lean4/releases/download/v4.33.1/lean-4.33.1-windows.zip",
+  "leanAssetSha256": "c39360867edfff6b090f20c16e18581c969ce839b71e813d76022ec04ec73e4d",
+  "mathlibTag": "v4.33.1",
+  "mathlibCommit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "mathlibUrl": "https://github.com/leanprover-community/mathlib4.git",
+  "dependencyRevisions": "lake-manifest.json"
+}

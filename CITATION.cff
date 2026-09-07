@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "Please cite this software by its exact release tag or commit, and cite the related paper separately."
+type: software
+title: "Square-free cyclic Fuglede: Lean formalization"
+version: 0.1.0
+license: MIT
+date-released: 2026-09-08
+authors:
+  - family-names: Liang
+    given-names: Jiahui
+    affiliation: Independent Researcher
+repository-code: "https://github.com/LingYi-Liang/squarefree-fuglede-lean"
+url: "https://github.com/LingYi-Liang/squarefree-fuglede-lean"
+abstract: "Lean 4 formalization of the spectral-to-tiling theorem for square-free finite cyclic groups, coprime prime-step descent, unit invariance, and a Fourier/Hadamard-submatrix consequence. Selected-results verification, not a full-paper certification."
+keywords:
+  - Lean
+  - formal verification
+  - Fuglede conjecture
+  - spectral sets
+  - cyclic groups
+references:
+  - type: generic
+    title: "Spectral Sets Tile in Cyclic Groups of Square-Free Order"
+    authors:
+      - family-names: Liang
+        given-names: Jiahui
+    doi: 10.5281/zenodo.22085489
